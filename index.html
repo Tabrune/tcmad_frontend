@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Court of Madness</title>
+  <title>Wiki-Style Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -30,27 +30,54 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
+    .content {
+      margin-top: 20px;
+    }
+
+    .sidebar {
+      float: left;
+      width: 200px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .main {
+      margin-left: 220px;
+    }
+
+    .main h2 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to the Court of Madness Website</h1>
+    <h1>Wiki-Style Website</h1>
   </header>
 
   <div class="container">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, neque ac aliquam pulvinar, enim mi sagittis velit, sed aliquet justo felis in lorem.</p>
-    <p>Curabitur vitae fringilla enim. Suspendisse ut enim ut risus cursus bibendum. Nullam facilisis iaculis enim, sit amet feugiat odio varius a.</p>
-  </div>
+    <div class="content">
+      <div class="sidebar">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <h2 id="section1">Section 1</h2>
+        <p>This is the content of Section 1.</p>
 
-  <footer>
-    &copy; 2023 Tabrune All rights reserved.
-  </footer>
+        <h2 id="section2">Section 2</h2>
+        <p>This is the content of Section 2.</p>
+
+        <h2 id="section3">Section 3</h2>
+        <p>This is the content of Section 3.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
